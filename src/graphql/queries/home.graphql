@@ -1,0 +1,16 @@
+query HomePage {
+  news(orderBy: date_DESC, first: 6) {
+    images(first: 1) {
+      url
+    }
+    slug
+    title
+    date
+  }
+  associates {
+    image {
+      url
+    }
+    name
+  }
+}
