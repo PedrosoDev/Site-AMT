@@ -6,11 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        neutral: {
-          800: "#2F312D",
-        },
-      },
+      // transitionProperty: {
+      //   height: "height",
+      // },
     },
   },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],

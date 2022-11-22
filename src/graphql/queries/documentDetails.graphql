@@ -1,0 +1,16 @@
+query DocumentDetails($slug: String) {
+  document(where: { slug: $slug }) {
+    title
+    categories {
+      id
+      name
+      files {
+        id
+        name
+        file {
+          url
+        }
+      }
+    }
+  }
+}

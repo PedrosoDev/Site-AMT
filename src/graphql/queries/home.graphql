@@ -1,15 +1,31 @@
 query HomePage {
-  news(orderBy: date_DESC, first: 6) {
-    images(first: 1) {
+  ads {
+    id
+    image {
       url
     }
+  }
+  news(orderBy: date_DESC, first: 6) {
+    id
     slug
     title
     date
+    images(first: 1) {
+      url(
+        transformation: {
+          image: { resize: { fit: crop, width: 400, height: 300 } }
+        }
+      )
+    }
   }
   associates {
+    id
     image {
-      url
+      url(
+        transformation: {
+          image: { resize: { fit: crop, width: 200, height: 200 } }
+        }
+      )
     }
     name
   }

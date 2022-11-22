@@ -28,7 +28,7 @@ const infos = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col mt-auto bg-neutral-800 p-6">
+    <footer className="mt-8 bottom-0 flex flex-col bg-[#2F312D] p-6">
       <div className="w-full flex flex-col md:flex-row justify-around">
         {infos.map((info) => (
           <section key={info.title} className="flex flex-col mt-6 md:mt-0">
@@ -53,11 +53,13 @@ export default function Footer() {
           </section>
         ))}
       </div>
-      <span className="text-white text-center mt-32">
-        Associação de Moradores do Taboleiro © {new Date().getFullYear()} -
-        Todos os Direitos Reservados | Criado por LabMat(i)², Instituto Federal
-        Catarinense - Campus Camboriú
-      </span>
+      <div className="mt-32 flex flex-col jus">
+        <span className="text-white text-center ">
+          Associação de Moradores do Taboleiro © {new Date().getFullYear()} -
+          Todos os Direitos Reservados | Criado por LabMat(i)², Instituto
+          Federal Catarinense - Campus Camboriú
+        </span>
+      </div>
     </footer>
   );
 }

@@ -1,0 +1,13 @@
+query NewsDetails($slug: String) {
+  aNews(where: { slug: $slug }) {
+    date
+    images {
+      id
+      url
+    }
+    title
+    content {
+      html
+    }
+  }
+}

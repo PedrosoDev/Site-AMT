@@ -1,0 +1,5 @@
+mutation PublishNewsLetterSubscriber($id: ID) {
+  publishSubscriber(where: { id: $id }) {
+    id
+  }
+}

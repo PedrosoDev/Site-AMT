@@ -1,0 +1,2 @@
+schema: "https://api-sa-east-1.hygraph.com/v2/clad2iaj30sb601ul0ncwcknx/master"
+documents: "src/graphql/**/*.graphql"

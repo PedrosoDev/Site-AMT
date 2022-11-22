@@ -1,0 +1,5 @@
+mutation CreateNewsLetterSubscriber($email: String!) {
+  createSubscriber(data: { email: $email }) {
+    id
+  }
+}

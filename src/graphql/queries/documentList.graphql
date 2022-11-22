@@ -1,0 +1,7 @@
+query DocumentList {
+  documents {
+    id
+    title
+    slug
+  }
+}
